@@ -1,0 +1,5 @@
+---
+- name: Implementing roles for tomcat
+  hosts: all
+  roles:
+   - tomcat

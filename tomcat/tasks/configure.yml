@@ -1,0 +1,11 @@
+---
+- name: Copy tomcat-users.xml and server.xml
+  copy:
+   src: "{{item.a}}"
+   dest: "{{item.b}}"
+  with_items:
+   - {a: "{{source1}}",b: "{{destination1}}"}
+   - {a: "{{source2}}",b: "{{destination1}}"}
+  notify:
+   - check_url_response
+...

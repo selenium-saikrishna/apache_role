@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+<tomcat-users>
+  <user username="admin" password="admin" roles="manager-script"/>
+</tomcat-users>
+

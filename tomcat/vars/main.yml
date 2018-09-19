@@ -1,0 +1,16 @@
+---
+# vars file for tomcat
+pkg1: tomcat7
+pkg2: tomcat7-admin
+state1: present
+state2: absent
+state3: restarted
+cache1: yes
+cache2: no
+source1: server.xml 
+source2: tomcat-users.xml
+destination1: /etc/tomcat7/
+server1: http://172.31.39.68:9090
+server2: http://172.31.46.76:9090
+status1: 200
+status2: -1 
