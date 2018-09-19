@@ -1,0 +1,8 @@
+---
+- name: Copy index.html
+  copy:
+   src: index.html
+   dest: /var/www/html/index.html
+  notify:
+   check_url_response
+...

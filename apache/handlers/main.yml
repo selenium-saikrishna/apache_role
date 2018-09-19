@@ -1,0 +1,10 @@
+---
+# handlers file for apache
+- name: check_url_response
+  uri:
+   url: "{{item}}"
+   status: 200
+  with_items:
+   - http://172.31.39.68
+   - http://172.31.46.76
+...
